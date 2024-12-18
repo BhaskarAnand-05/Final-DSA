@@ -51,13 +51,20 @@ void Print_Tree(Node *root)
 {
     vector<int> arr;
     // edge case
-    if(!root)
-    return;
+    if (!root)
+        return;
 
     inorder(root);
-                
+}
+
+void printmatrix(vector<vector<int>> matrix, int row, int col)
+{
+    for (int i = 0; i < row; i++)
+    {
+        for (int j = 0; j < col; j++)
+        {
+            cout << matrix[i][j] << " ";
+        }
+        cout << endl;
     }
-
-    
-        
-
+}

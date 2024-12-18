@@ -9,6 +9,7 @@
 #include <stack>
 #include <queue>
 #include <fstream>
+#include <list>
 
 using namespace std;
 
@@ -51,13 +52,8 @@ void Print_Tree(Node *root)
 {
     vector<int> arr;
     // edge case
-    if(!root)
-    return;
+    if (!root)
+        return;
 
     inorder(root);
-                
-    }
-
-    
-        
-
+}
